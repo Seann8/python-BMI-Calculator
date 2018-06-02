@@ -22,7 +22,7 @@ class Bmi(self):
    def convert_height(self):
        if self.unit_height == 'feet' :
            convert = .3048
-        
+           
     def calculate(self):
         BMI =(weight / height ** 2)
         return BMI
@@ -30,6 +30,5 @@ class Bmi(self):
 
     def convert(self):
         pass
-    
 
 
