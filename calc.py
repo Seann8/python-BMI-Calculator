@@ -36,7 +36,9 @@ class Bmi():
 
         except ZeroDivisionError:
 
-            bmi = 0
+            bmi = None # will handle messaging at UI level ,
+                       # something like if bmi is None then show message
+
 
         return round(bmi,2)
 
