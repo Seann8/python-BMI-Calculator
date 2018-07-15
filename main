@@ -1,0 +1,50 @@
+from calc import Bmi
+from text_input import DataInput
+
+from sys import exit
+
+# Author : Sean Nolan
+# Email : seannolan85@gmail.com
+# Phone : 0863811508""" Sean Nolan
+
+
+# create  objects
+
+
+message = """Python BMI Calculator\n\nWritten By Sean Nolan\n\nEmail:Seannolan85@gmail.com\n\nPhone:086-3811-508 """
+unit_msg = """SELECT YOUR UNITS :\n\nEnter 1 for Metric Units or 2 For Imperial"""
+weight_msg = """ENTER YOUR Weight:\n\n"""
+height_msg = """ENTER YOUR Height:\n\n"""
+
+
+while True:
+    front_end = DataInput()
+    calculator = Bmi()
+    start = front_end.splash_screen(message)
+    print(start)
+    front_end.input_units(unit_msg)
+
+    if front_end.unit == "M": # Call Metric Inputs
+        front_end.input_metric_height(height_msg)
+        front_end.input_metric_weight(weight_msg)
+    elif front_end.unit == "I": # Call imperial inputs
+        front_end.input_imp_height(height_msg)
+        front_end.input_imp_weight(weight_msg)
+
+    calculator.calculate(front_end.height,front_end.weight) # Calculate BMI
+    calculator.band() # Calculate weight band
+
+    print(calculator.bmi)
+    print(calculator.advice)
+
+    close = front_end.quit() # Call the quit method
+
+    if close: # If True Close the progam ,else repeat the loop
+        exit(0)
+    else:
+        continue
+
+
+
+
+
