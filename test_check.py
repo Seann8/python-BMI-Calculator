@@ -2,9 +2,6 @@ from quality_check import Check, ZeroError, LimitError
 
 import unittest
 
-# Author : Sean Nolan
-# Email : seannolan85@gmail.com
-# Phone : 0863811508
 
 
 class Test_Quality_Check(unittest.TestCase):
