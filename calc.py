@@ -1,8 +1,3 @@
-# Author : Sean Nolan
-# Email : seannolan85@gmail.com
-# Phone : 0863811508
-
-
 class Bmi():
     """@DESC main class for handling the units and inputs,
        converting and calculating the output to be returned """
