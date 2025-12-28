@@ -1,7 +1,4 @@
-# Author : Sean Nolan
-# Email : seannolan85@gmail.com
-# Phone : 0863811508
-
+=
 from unit_convert import UnitConversion
 
 from quality_check import Check
