@@ -1,6 +1,3 @@
-# Author : Sean Nolan
-# Email : seannolan85@gmail.com
-# Phone : 0863811508
 
 
 class UnitConversion:
