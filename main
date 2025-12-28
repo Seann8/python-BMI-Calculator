@@ -7,7 +7,7 @@ from sys import exit
 # create  objects
 
 
-message = """Python BMI Calculator\n\nWritten By Sean Nolan\n\nEmail:Seannolan85@gmail.com\n\nPhone:086-3811-508 """
+message = """Python BMI Calculator\n\nWritten By Sean Nolan"""
 unit_msg = """SELECT YOUR UNITS :\n\nEnter 1 for Metric Units or 2 For Imperial"""
 weight_msg = """ENTER YOUR Weight:\n\n"""
 height_msg = """ENTER YOUR Height:\n\n"""
